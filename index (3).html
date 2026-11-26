@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Birthday, Hana</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{min-height:100vh;display:grid;place-items:center;padding:16px;background:radial-gradient(circle at 30% 25%,#f2b8a2,transparent 45%),radial-gradient(circle at 75% 70%,#7d8fd6,transparent 50%),#241a33}
+svg{width:100%;max-width:760px;height:auto;overflow:visible;-webkit-tap-highlight-color:transparent;user-select:none}
+text{font-family:Caveat,'Comic Sans MS',cursive;font-weight:700}
+.hit{fill:transparent;cursor:pointer;outline:none}
+.hit:focus-visible{stroke:#fff;stroke-width:3}
+.page{position:fixed;inset:0;z-index:2;display:none;flex-direction:column;align-items:center;justify-content:safe center;gap:32px;padding:24px;overflow:auto;text-align:center;color:#fff;font-family:Caveat,'Comic Sans MS',cursive;background:radial-gradient(circle at 20% 20%,#ff9bb3,transparent 45%),radial-gradient(circle at 80% 80%,#8f7bea,transparent 50%),#3a1738}
+.page.on{display:flex;animation:in .8s ease both}
+.card{max-width:620px;padding:36px 28px;border-radius:28px;background:#ffffff1f;border:1px solid #ffffff80;box-shadow:0 20px 50px #0006,inset 0 0 30px #ffffff26;backdrop-filter:blur(12px);font-size:clamp(28px,5vw,38px);line-height:1.45}
+.card.big{font-size:clamp(46px,10vw,80px)}
+.page button{font:700 28px Caveat,cursive;padding:10px 46px;border:0;border-radius:99px;background:#fff;color:#b02a5b;box-shadow:0 8px 24px #0005;cursor:pointer}
+.page button:hover{transform:scale(1.06)}
+.page button:focus-visible{outline:3px solid #ffd36b;outline-offset:3px}
+.heart{position:absolute;bottom:-40px;color:#ffd0dc;opacity:.55;pointer-events:none;animation:up 9s linear infinite}
+@keyframes in{from{opacity:0;transform:translateY(20px)}}
+@keyframes up{to{transform:translateY(-110vh) rotate(40deg);opacity:0}}
+@media(prefers-reduced-motion:reduce){.page.on{animation:none}.heart{display:none}}
+</style>
+</head>
+<body>
+<section class="page on">
+  <div class="card">I know I drive you a little crazy sometimes, baby&hellip;<br>but I like to think I do it <em>the good way</em> &#9829;<br><bdi dir="rtl" lang="fa">"چون من کیری خفنم"</bdi></div>
+  <button>Next &rarr;</button>
+</section>
+<section class="page">
+  <div class="card big">Happy Birthday,<br>Mama &#9829;</div>
+  <button>Next &rarr;</button>
+</section>
+<section class="page">
+  <div class="card big">Are you ready?</div>
+  <button>Yes &#9829;</button>
+</section>
+<svg id="tape" viewBox="0 0 640 410" aria-label="Birthday mixtape cassette for Hana">
+<defs>
+  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff" stop-opacity=".38"/><stop offset=".45" stop-color="#cfe6ff" stop-opacity=".09"/><stop offset="1" stop-color="#fff" stop-opacity=".25"/></linearGradient>
+  <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset=".5" stop-color="#fff" stop-opacity=".2"/><stop offset="1" stop-color="#fff" stop-opacity=".8"/></linearGradient>
+  <radialGradient id="metal" cx=".35" cy=".3"><stop stop-color="#fff"/><stop offset=".6" stop-color="#aab"/><stop offset="1" stop-color="#445"/></radialGradient>
+  <radialGradient id="pack"><stop offset=".3" stop-color="#1c0f09"/><stop offset=".75" stop-color="#5a3520"/><stop offset=".9" stop-color="#3b2114"/><stop offset="1" stop-color="#6d452b"/></radialGradient>
+  <clipPath id="shell"><rect x="10" y="10" width="620" height="390" rx="24"/></clipPath>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feGaussianBlur stdDeviation="16"/></filter>
+</defs>
+
+<ellipse cx="320" cy="405" rx="290" ry="18" fill="#000" opacity=".45" filter="url(#shadow)"/>
+<rect x="10" y="10" width="620" height="390" rx="24" fill="#bcd8f0" fill-opacity=".1"/>
+
+<!-- tape pack and tape path, seen through the glass -->
+<g opacity=".94"><circle id="packL" cx="190" cy="208" r="100" fill="url(#pack)"/><circle id="packR" cx="450" cy="208" r="50" fill="url(#pack)"/></g>
+<path id="path" fill="none" stroke="#4a2a19" stroke-width="4"/>
+<g fill="url(#metal)" stroke="#fff" stroke-opacity=".6">
+  <circle cx="66" cy="356" r="19"/><circle cx="574" cy="356" r="19"/><circle cx="66" cy="356" r="5"/><circle cx="574" cy="356" r="5"/>
+</g>
+<rect x="286" y="368" width="68" height="7" fill="#b8793f"/><rect x="298" y="357" width="44" height="12" rx="2" fill="#d9c9a3"/>
+<g id="reelL"></g><g id="reelR"></g>
+
+<!-- front glass shell -->
+<rect x="10" y="10" width="620" height="390" rx="24" fill="url(#glass)" stroke="url(#edge)" stroke-width="3"/>
+<rect x="19" y="19" width="602" height="372" rx="18" fill="none" stroke="#fff" stroke-opacity=".28"/>
+<rect x="46" y="34" width="548" height="94" rx="10" fill="#fff" fill-opacity=".8" stroke="#fff"/>
+<path d="M118 82H576M64 114H576" stroke="#8a9cc4" stroke-opacity=".55"/>
+<text x="62" y="84" font-size="58" fill="#c0392b">A</text>
+<text x="336" y="73" font-size="36" text-anchor="middle" fill="#1d2a6b">Happy Birthday, Hana ♥</text>
+<text id="song" x="320" y="108" font-size="26" text-anchor="middle" fill="#1d2a6b" aria-live="polite"></text>
+
+<rect x="112" y="150" width="416" height="116" rx="58" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="2"/>
+<rect x="260" y="180" width="120" height="56" rx="8" fill="#fff" fill-opacity=".08" stroke="#fff" stroke-opacity=".8" stroke-width="2"/>
+<path d="M272 183v10M296 183v6M320 183v10M344 183v6M368 183v10" stroke="#fff" stroke-width="1.5"/>
+
+<path d="M118 398L145 318H495L522 398" fill="#fff" fill-opacity=".09" stroke="#fff" stroke-opacity=".65" stroke-width="2"/>
+<g fill="#160f22" fill-opacity=".7" stroke="#fff" stroke-opacity=".7" stroke-width="1.5">
+  <circle cx="186" cy="364" r="12"/><circle cx="454" cy="364" r="12"/><rect x="230" y="344" width="26" height="22" rx="3"/><rect x="384" y="344" width="26" height="22" rx="3"/>
+</g>
+<text x="52" y="296" font-size="22" fill="#fff">C-60</text>
+<text x="588" y="296" font-size="22" fill="#fff" text-anchor="end">made for you</text>
+<g id="screws"></g>
+
+<g clip-path="url(#shell)" fill="#fff" pointer-events="none">
+  <path d="M60 10H190L40 400H10V150Z" opacity=".13"/><path d="M220 10H248L98 400H70Z" opacity=".1"/><path d="M560 10H600L450 400H410Z" opacity=".08"/>
+</g>
+
+<rect class="hit" id="prev" x="10" y="135" width="100" height="180" tabindex="0" role="button" aria-label="Previous song"/>
+<rect class="hit" id="play" x="112" y="10" width="416" height="390" tabindex="0" role="button" aria-label="Play or pause"/>
+<rect class="hit" id="next" x="530" y="135" width="100" height="180" tabindex="0" role="button" aria-label="Next song"/>
+</svg>
+<audio id="audio" preload="metadata"></audio>
+
+<script>
+// Edit file paths to match your repo (case-sensitive)
+const SONGS = [
+  { title: "California Dreamin'", file: "files/california-dreamin.mp3" },
+  { title: "Hotel California",    file: "files/hotel-california.mp3" },
+  { title: "Brooklyn Baby",       file: "files/Lana Del Rey - Brooklyn Baby.mp3" },
+  { title: "Somersault",          file: "files/i_got_you_on_tape_somersault.mp3" }
+];
+
+const $ = id => document.getElementById(id), audio = $("audio");
+let index = 0, aL = 0, aR = 0, last = 0;
+
+for (const id of ["reelL", "reelR"]) {
+  let teeth = "";
+  for (let i = 0; i < 6; i++) teeth += `<path d="M-5-27H5L3-15H-3Z" fill="#f4f6ff" transform="rotate(${i * 60})"/>`;
+  $(id).innerHTML = `<circle r="39" fill="#e8f0ff" fill-opacity=".92" stroke="#fff"/><circle r="27" fill="#1a1226"/>${teeth}<circle cy="-33" r="3" fill="#667"/>`;
+}
+$("screws").innerHTML = [[30,30],[610,30],[30,380],[610,380],[320,300]].map(([x,y]) =>
+  `<g transform="translate(${x} ${y})"><circle r="8" fill="url(#metal)"/><path d="M-4 0H4M0-4V4" stroke="#334" stroke-width="1.8"/></g>`).join("");
+
+function show(note) { $("song").textContent = note || `${index + 1}. ${SONGS[index].title}`; }
+function load(i) { index = (i + SONGS.length) % SONGS.length; audio.src = SONGS[index].file; show(); }
+// Old cassette sound (works over http/https, not when opened as a local file)
+let ctx, hiss;
+function setupTape() {
+  if (ctx || !location.protocol.startsWith("http")) return;
+  ctx = new AudioContext();
+  const filter = (type, freq, gain = 0) => new BiquadFilterNode(ctx, { type, frequency: freq, gain });
+  // wow (slow) and flutter (fast) pitch wobble
+  const wobble = new DelayNode(ctx, { delayTime: .012 });
+  for (const [hz, depth] of [[.6, .0012], [7, .00005]]) {
+    const lfo = new OscillatorNode(ctx, { frequency: hz }), amt = new GainNode(ctx, { gain: depth });
+    lfo.connect(amt).connect(wobble.delayTime); lfo.start();
+  }
+  // soft tape saturation
+  const curve = Float32Array.from({ length: 1024 }, (_, i) => Math.tanh(1.6 * (i / 511.5 - 1)) / Math.tanh(1.6));
+  ctx.createMediaElementSource(audio)
+    .connect(wobble)
+    .connect(filter("highpass", 90))
+    .connect(filter("lowshelf", 200, 2))
+    .connect(new WaveShaperNode(ctx, { curve, oversample: "2x" }))
+    .connect(filter("lowpass", 7500))
+    .connect(new GainNode(ctx, { gain: .85 }))
+    .connect(ctx.destination);
+  // tape hiss and a few crackles
+  const buf = ctx.createBuffer(1, ctx.sampleRate * 4, ctx.sampleRate), d = buf.getChannelData(0);
+  for (let i = 0; i < d.length; i++) d[i] = (Math.random() * 2 - 1) * (Math.random() < .00003 ? 8 : 1);
+  const noise = new AudioBufferSourceNode(ctx, { buffer: buf, loop: true });
+  hiss = new GainNode(ctx, { gain: 0 });
+  noise.connect(filter("highpass", 2000)).connect(filter("lowpass", 8000)).connect(hiss).connect(ctx.destination);
+  noise.start();
+}
+const setHiss = v => hiss && hiss.gain.setTargetAtTime(v, ctx.currentTime, .05);
+audio.onplaying = () => setHiss(.012);
+audio.onpause = audio.onwaiting = () => setHiss(0);
+
+function play() { setupTape(); ctx?.resume(); audio.play().then(() => show()).catch(e => { if (e.name !== "AbortError") show("Can't play: " + SONGS[index].title); }); }
+function toggle() { if (audio.paused) play(); else audio.pause(); }
+
+const actions = { play: toggle, prev: () => { load(index - 1); play(); }, next: () => { load(index + 1); play(); } };
+for (const [id, fn] of Object.entries(actions)) {
+  $(id).onclick = fn;
+  $(id).onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); fn(); } };
+}
+audio.onended = () => { if (index < SONGS.length - 1) actions.next(); else { load(0); show("Tap to play again ♥"); } };
+audio.onerror = () => show("File not found: " + SONGS[index].title);
+
+function frame(now) {
+  const dt = Math.min((now - last) / 1000, .1); last = now;
+  const done = (index + (audio.duration ? audio.currentTime / audio.duration : 0)) / SONGS.length;
+  const span = 100 * 100 - 50 * 50;
+  const rL = Math.sqrt(100 * 100 - done * span), rR = Math.sqrt(50 * 50 + done * span);
+  if (!audio.paused && audio.readyState > 2) { aL -= dt * 7000 / rL; aR -= dt * 7000 / rR; }
+  $("packL").setAttribute("r", rL); $("packR").setAttribute("r", rR);
+  $("path").setAttribute("d", `M${190 - rL} 208L47 356Q50 373 66 375H574Q590 373 593 356L${450 + rR} 208`);
+  $("reelL").setAttribute("transform", `translate(190 208) rotate(${aL})`);
+  $("reelR").setAttribute("transform", `translate(450 208) rotate(${aR})`);
+  requestAnimationFrame(frame);
+}
+const pages = [...document.querySelectorAll(".page")];
+const tape = $("tape");
+tape.style.visibility = "hidden";
+pages.forEach((p, i) => {
+  for (let h = 0; h < 14; h++) {
+    const el = document.createElement("span");
+    el.className = "heart"; el.textContent = "♥"; el.setAttribute("aria-hidden", "true");
+    el.style.cssText = `left:${Math.random() * 96}%;font-size:${14 + Math.random() * 26}px;animation-delay:${-Math.random() * 9}s`;
+    p.append(el);
+  }
+  p.querySelector("button").onclick = () => {
+    p.classList.remove("on");
+    if (pages[i + 1]) pages[i + 1].classList.add("on"); else tape.style.visibility = "visible";
+  };
+});
+load(0);
+show("Tap the tape to play");
+requestAnimationFrame(frame);
+</script>
+</body>
+</html>
